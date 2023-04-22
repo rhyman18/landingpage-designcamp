@@ -17,7 +17,6 @@ module.exports = {
     filename: '[name].[contenthash].js',
     assetModuleFilename: '[name].[contenthash][ext]',
   },
-  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -31,15 +30,6 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
-          },
-        ],
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'source-map-loader',
           },
         ],
       },
