@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignCamp | Homepage</title>
+    <link rel="shortcut icon" type="image/x-icon">
+
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap" rel="stylesheet">
+
+    <!-- tiny slider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+</head>
+
+<body>
+    <header class="fixed top-0 left-0 right-0 z-20 bg-white">
+        <!-- components promo -->
+        <div id="promo"
+            class="flex justify-center items-center md:h-12 py-3 px-6 md:px-16 bg-oren animate__animated animate__slideInDown"
+            role="alert">
+            <span class="sr-only">Info</span>
+            <div class="grow text-start md:text-center">
+                <a href="#"
+                    class="transition-all text-sm hover:text-base md:text-base md:hover:text-lg hover:font-semibold">
+                    Dapatkan diskon up to 90% dengan mendaftar sekarang!
+                </a>
+            </div>
+            <button type="button" data-dismiss-target="#promo" aria-label="Close">
+                <span class="sr-only">Close</span>
+                <svg aria-hidden="true" class="w-5 h-5 hover:text-white" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- components navbar -->
+        <nav class="shadow-md">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 mx-auto p-6 md:px-16">
+                <a href="#" class="flex items-center">
+                    <img id="logo" class="h-8 mr-3" alt="Website Logo" />
+                    <span class="self-center text-2xl font-bold whitespace-nowrap">DesignCamp</span>
+                </a>
+                <div class="flex gap-5 md:gap-0 font-semibold">
+                    <a href="#"
+                        class="py-3 px-6 bg-oren hover:bg-hitam hover:text-white sm:bg-white sm:hover:text-oren sm:hover:bg-white rounded-full">Login</a>
+                    <a href="#"
+                        class="bg-hitam text-white py-3 px-6 rounded-full hover:bg-oren hover:text-black">Daftar</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- section hero -->
+        <div class="bg-hero flex justify-center items-center animate__animated animate__fadeIn animate__slower">
+            <div class="flex flex-col gap-5 text-center sm:w-4/5 2xl:w-3/5 mx-6 posisi-bawahan sm:posisi-bawah">
+                <h1
+                    class="montagu-slab font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl sm:leading-tight">
+                    Transform Your <span class="underline-oren">Creative</span> Vision into <span
+                        class="underline-oren">Reality</span>
+                </h1>
+                <p class="text-abu sm:leading-relaxed font-medium">
+                    Join the DesignCamp community and unlock your potential as a graphic designer, no experience
+                    required. Our comprehensive course offers hands-on training, expert guidance, and real-world
+                    experience to help you master the art of graphic design from the ground up.</p>
+                <div class="flex justify-center sm:gap-5 font-semibold mt-5">
+                    <a href="#" class="py-3 px-6 hover:text-oren rounded-full">
+                        Contact Us
+                    </a>
+                    <a href="#" class="bg-hitam text-white py-3 px-6 rounded-full hover:bg-oren hover:text-black">
+                        Start Learning<i class="fa-solid fa-arrow-right ps-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- section stat -->
+        <div class="flex flex-wrap justify-stretch bg-hitam text-white text-center py-8 lg:py-0">
+            <div class="grow flex flex-col my-8 lg:my-24 cursor-pointer hover:text-oren" data-aos="zoom-in"
+                data-aos-offset="0">
+                <h1 class="montagu-slab text-5xl font-bold absolute top-0 left-0 right-0" id="countMembers"></h1>
+                <p class="mt-16">members</p>
+            </div>
+            <div class="lg:border-l lg:my-28 basis-full sm:basis-0"></div>
+            <div class="grow flex flex-col my-8 lg:my-24 cursor-pointer hover:text-oren" data-aos="zoom-in"
+                data-aos-offset="0">
+                <h1 class="montagu-slab text-5xl font-bold absolute top-0 left-0 right-0" id="countReviews"></h1>
+                <p class="mt-16">positive reviews</p>
+            </div>
+            <div class="lg:border-l lg:my-28 basis-full lg:basis-0"></div>
+            <div class="grow flex flex-col my-8 lg:my-24 cursor-pointer hover:text-oren" data-aos="zoom-in"
+                data-aos-offset="0">
+                <h1 class="montagu-slab text-5xl font-bold absolute top-0 left-0 right-0" id="countVideos"></h1>
+                <p class="mt-16">videos</p>
+            </div>
+            <div class="lg:border-l lg:my-28 basis-full sm:basis-0"></div>
+            <div class="grow flex flex-col my-8 lg:my-24 cursor-pointer hover:text-oren" data-aos="zoom-in"
+                data-aos-offset="0">
+                <h1 class="montagu-slab text-5xl font-bold absolute top-0 left-0 right-0" id="countModules"></h1>
+                <p class="mt-16">modules</p>
+            </div>
+        </div>
+
+        <!-- section fasilitas -->
+        <div class="max-w-screen-2xl flex flex-col xl:flex-row justify-between items-center mx-auto py-12 md:py-24">
+            <div class="basis-1/3 mb-12 xl:mb-0 px-6 xl:px-0">
+                <h1 class="montagu-slab font-semibold text-3xl sm:text-4xl xl:text-5xl mb-6 leading-tight"
+                    data-aos="fade-in">
+                    Comprehensive Learning <span class="underline-oren">Facilities</span>
+                </h1>
+                <ul class="leading-loose text-lg list-oren ms-8">
+                    <li data-aos="zoom-in-right" data-aos-delay="200"><span class="ps-2">Lifetime video lessons</span>
+                    </li>
+                    <li data-aos="zoom-in-right" data-aos-delay="400"><span class="ps-2">Live Q&A sessions</span></li>
+                    <li data-aos="zoom-in-right" data-aos-delay="600"><span class="ps-2">Hands-on projects</span></li>
+                    <li data-aos="zoom-in-right" data-aos-delay="800"><span class="ps-2">Group critiques</span></li>
+                    <li data-aos="zoom-in-right" data-aos-delay="1000"><span class="ps-2">e-Certificate</span></li>
+                    <li data-aos="zoom-in-right" data-aos-delay="1200"><span class="ps-2">Portfolio reviews</span></li>
+                </ul>
+            </div>
+            <div class="flex justify-end basis-2/3 w-full xl:w-1/2 px-6 xl:px-0" data-aos="flip-right">
+                <iframe class="w-full xl:w-3/4 mx-auto md:mx-24 xl:mx-0" height="400"
+                    src="https://www.youtube.com/embed/FgZBeR1q-44" title="YouTube video player" frameborder="1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- section material -->
+        <div class="max-w-screen-2xl mx-auto py-12 md:py-24">
+            <div class="text-center mb-12">
+                <h1 class="montagu-slab font-semibold text-3xl xl:text-4xl mb-6 leading-tight" data-aos="fade-in">What
+                    Will You <span class="underline-oren">Learn</span></h1>
+                <p class="text-abu leading-relaxed" data-aos="fade-in">
+                    Discover what you'll learn in DesignCamp's graphic design course, from fundamentals to advanced
+                    techniques.
+                </p>
+            </div>
+            <div id="materi" class="flex flex-wrap gap-5 justify-center mx-6 sm:mx-0">
+                <!-- dummy to get style from tailwind
+                <div class="max-w-md py-7 px-9 bg-white border border-gray-100 rounded-2xl shadow-xl hover:bg-hitam hover:text-white cursor-pointer"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="mb-2 text-xl font-bold tracking-tight">
+                        <span class="bg-oren py-1 px-3 me-2 rounded-lg text-hitam">0</span>Judul
+                    </h5>
+                    <p class="text-abu leading-normal my-9">Deskripsi...</p>
+                    <button data-modal-target="staticModal" data-modal-toggle="staticModal" class="font-semibold">Lebih
+                        lanjut<i class="fa-solid fa-arrow-right fa-sm ps-2"></i></button>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- section comparison -->
+        <div class="bg-hitam py-12 md:py-24 text-white">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="text-center mb-12">
+                    <h1 class="montagu-slab font-semibold text-3xl xl:text-4xl mb-6 leading-tight" data-aos="fade-in">
+                        Self Learning vs <span class="text-oren">DesignCamp</span>
+                    </h1>
+                    <p class="leading-relaxed" data-aos="fade-in">
+                        Mentorship is key to success in graphic design - choose DesignCamp for personalized guidance.
+                    </p>
+                </div>
+                <div class="flex flex-col xl:flex-row justify-center items-center gap-6">
+                    <div class="flex px-6 lg:px-0">
+                        <div data-aos="fade-right" class="w-80 py-9 hidden sm:block">
+                            <h1 class="text-2xl text-center font-bold mb-12">&nbsp;</h1>
+                            <div class="flex flex-col gap-5 font-bold" id="komparasiJudul">
+                                <p class="h-24 hidden">dummy</p>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in-up" data-aos-delay="400"
+                            class="max-w-lg bg-hitaman py-7 px-9 rounded-3xl cursor-pointer">
+                            <h1 class="text-2xl text-center font-bold mb-12">Belajar Sendirian</h1>
+                            <div class="flex flex-col gap-5" id="komparasiSolo"></div>
+                        </div>
+                    </div>
+                    <div class="flex px-6 lg:px-0">
+                        <div data-aos="fade-right" class="w-80 py-9 hidden sm:block xl:hidden">
+                            <h1 class="text-2xl text-center font-bold mb-12">&nbsp;</h1>
+                            <div class="flex flex-col gap-5 font-bold" id="komparasiJudulDua"></div>
+                        </div>
+                        <div data-aos="zoom-in-up" data-aos-delay="200"
+                            class="max-w-lg bg-hitaman py-7 px-9 rounded-3xl border-4 border-oren shadow-[0_0_20px] shadow-oren cursor-pointer">
+                            <h1 class="flex gap-2 justify-center items-center text-2xl font-bold mb-12"><img
+                                    id="logoKomparasi" class="h-8" alt="Website Logo" />DesignCamp</h1>
+                            <div class="flex flex-col gap-5" id="komparasiBootcamp"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section mentor -->
+        <div class="max-w-screen-2xl mx-auto py-12 md:py-24">
+            <div class="text-center mb-12">
+                <h1 class="montagu-slab font-semibold text-3xl xl:text-4xl mb-6 leading-tight" data-aos="fade-in">Learn
+                    from the <span class="underline-oren">Expert</span></h1>
+                <p class="text-abu leading-relaxed" data-aos="fade-in">
+                    Discover what you'll learn in DesignCamp's graphic design course, from fundamentals to advanced
+                    techniques.
+                </p>
+            </div>
+            <div class="flex flex-col justify-center sm:mx-6" data-aos="zoom-in">
+                <div id="my-slider">
+                    <!-- dummy to get style from tailwind
+                    <div>
+                        <div class="flex justify-center">
+                            <div class="max-w-xs">
+                                <div class="slide-img">
+                                    <img class="w-full">
+                                </div>
+                                <div class="slide-body mt-6">
+                                    <h3 class="text-xl font-bold">Olivia Kim</h3>
+                                    <h5 class="font-semibold">Pekerjaan</h5>
+                                    <p class="text-abu mt-2">detail ...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div id="my-controls" class="flex justify-center sm:justify-end mt-6 gap-3">
+                    <button
+                        class="py-3 px-6 rounded-full border border-hitam hover:bg-gray-100 hover:border-hitaman font-medium"><i
+                            class="fa-solid fa-arrow-left"></i></button>
+                    <button class="py-3 px-6 rounded-full bg-oren hover:bg-yellow-500 font-medium"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- section faq -->
+        <div class="max-w-screen-2xl mx-auto py-12 md:py-24">
+            <div class="flex gap-12 flex-wrap md:flex-nowrap mx-6">
+                <div class="basis-full md:basis-1/3 text-center md:text-left mb-12">
+                    <h1 class="montagu-slab font-semibold text-4xl xl:text-5xl mb-6 leading-tight" data-aos="fade-in"
+                        data-aos-offset="-500">
+                        <span class="underline-oren">Frequently Asked</span>Questions
+                    </h1>
+                    <p class="text-abu leading-relaxed mb-12" data-aos="zoom-in-right" data-aos-delay="100"
+                        data-aos-offset="-500">
+                        Get answers to your questions about DesignCamp's graphic design course.
+                    </p>
+                    <p class="font-semibold mb-7" data-aos="zoom-in-right" data-aos-delay="200" data-aos-offset="-500">
+                        Have other questions?</p>
+                    <a href="#" data-aos="zoom-in-right" data-aos-delay="300" data-aos-offset="-500"
+                        class="bg-hitam text-white font-semibold py-4 px-6 rounded-full hover:bg-oren hover:text-hitam">Contact
+                        Us</a>
+                </div>
+                <div class="basis-full md:basis-2/3 faqs-list" id="listFaqs" data-aos="fade-in" data-aos-offset="-500">
+                    <!-- dummy to get style from tailwind
+                    <div id="accordion-flush" data-accordion="open" data-active-classes="bg-white font-bold border-b-0"
+                        data-inactive-classes="bg-white font-semibold">
+                        <h2 id="accordion-flush-heading-1">
+                            <button type="button"
+                                class="flex items-center justify-between w-full py-5 text-left border-b border-abu font-semibold"
+                                data-accordion-target="#accordion-flush-body-1" aria-expanded="false"
+                                aria-controls="accordion-flush-body-1">
+                                <span>Judul</span>
+                                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                            <div class="pb-5 border-b border-abu">
+                                <p class="mb-2">Isi...</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- section pricing -->
+        <div class="max-w-screen-2xl mx-auto py-12 md:py-24">
+            <div class="text-center mb-12">
+                <h1 class="montagu-slab font-semibold text-3xl xl:text-4xl mb-6 leading-tight" data-aos="fade-in"
+                    data-aos-offset="-500"><span class="underline-oren">Save More</span> with DesignCamp</h1>
+                <p class="text-abu leading-relaxed" data-aos="fade-in" data-aos-offset="-500">
+                    Get benefits worth thousands of dollars!
+                </p>
+            </div>
+            <div class="flex flex-wrap lg:flex-nowrap justify-center gap-6 sm:gap-12 mx-6 sm:mx-0 mb-9 md:mb-16">
+                <div class="bg-hitam text-white py-14 sm:py-20 px-10 sm:px-16 rounded-3xl width-pricing"
+                    data-aos="zoom-in-right" data-aos-offset="-500">
+                    <h1 class="flex gap-3 text-4xl font-extrabold mb-6"><img id="logoPricing" class="h-9"
+                            alt="Website Logo" />DesignCamp</h1>
+                    <p class="flex gap-2 mb-6"><span class="text-2xl text-red-700 line-through">&dollar;500</span><span
+                            class="font-extrabold text-4xl">&dollar;60</span></p>
+                    <ul class="leading-loose text-xl font-semibold list-oren ms-8">
+                        <li><span class="ps-2">30+ modules</span></li>
+                        <li><span class="ps-2">6+ hands-on projects</span></li>
+                        <li><span class="ps-2">Lifetime access</span></li>
+                        <li><span class="ps-2">Weekly mentorship</span></li>
+                    </ul>
+                </div>
+                <div class="self-center font-extrabold text-5xl px-9 py-10 bg-oren rounded-full absolute hidden z-10 lg:block"
+                    data-aos="zoom-in" data-aos-offset="-500" data-aos-delay="800">VS</div>
+                <div class="bg-hitam text-white py-14 sm:py-20 px-10 sm:px-16 rounded-3xl width-pricing"
+                    data-aos="zoom-in-left" data-aos-offset="-500">
+                    <div class="mb-6">
+                        <h1 class="font-bold text-xl">Graphic Design Bootcamp</h1>
+                        <p>&dollar;2,000++</p>
+                    </div>
+                    <div class="mb-6">
+                        <h1 class="font-bold text-xl">Offline Training</h1>
+                        <p>&dollar;300++ / module * 20 modules = &dollar;6,000++</p>
+                    </div>
+                    <div class="mb-6">
+                        <h1 class="font-bold text-xl">Online Training</h1>
+                        <p>&dollar;50++ / module * 20 modules = &dollar;1,000++</p>
+                    </div>
+                    <div class="mb-6">
+                        <h1 class="font-bold text-xl">Buy Modules One by One</h1>
+                        <p>&dollar;20 / module * 20 modules = &dollar;400</p>
+                    </div>
+                    <div class="mb-6">
+                        <h1 class="font-bold text-xl">Hire a Mentor</h1>
+                        <p>&dollar;50 - &dollar;100 / session</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center text-center offer border-4 border-oren py-16 px-6 sm:px-0 rounded-3xl gap-3 mx-6"
+                data-aos="zoom-in-up" data-aos-offset="-500">
+                <h1 class="montagu-slab font-semibold text-4xl">Limited-time Promotion</h1>
+                <p class="text-xl">Join today for an exclusive price offer!</p>
+                <div class="my-9 flex flex-col items-center gap-5">
+                    <h1 class="font-extrabold text-6xl">&dollar;50</h1>
+                    <a href="#"
+                        class="bg-oren py-4 px-6 rounded-full font-semibold hover:bg-hitam hover:text-white">Join Now<i
+                            class="fa-solid fa-arrow-right ps-1"></i></a>
+                </div>
+                <p>Note: Prices will increase as more learning materials are added. Join now to save more!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-hitam text-white">
+        <!-- section footer -->
+        <div
+            class="max-w-screen-2xl flex flex-col lg:flex-row justify-between items-center mx-auto pt-12 md:pt-24 pb-8 md:pb-16 gap-4">
+            <div class="flex flex-col sm:max-w-md items-center sm:items-start">
+                <h1 class="flex gap-2 text-2xl font-bold mb-6"><img id="logoFooter" class="h-9"
+                        alt="Website Logo" />DesignCamp</h1>
+                <p class="text-center sm:text-left">
+                    Your comprehensive graphic design education with mentorship and hands-on practice.
+                </p>
+                <div class="flex gap-3 my-9">
+                    <a href="https://instagram.com" class="bg-hitaman p-4 rounded-full"><i
+                            class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="https://twitter.com" class="bg-hitaman p-4 rounded-full"><i
+                            class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="https://youtube.com" class="bg-hitaman p-4 rounded-full"><i
+                            class="fa-brands fa-youtube fa-xl"></i></a>
+                    <a href="https://linkedin.com" class="bg-hitaman p-4 rounded-full"><i
+                            class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                </div>
+            </div>
+            <div class="flex gap-6 flex-col justify-center text-center lg:text-left md:flex-row">
+                <ul class="w-40">
+                    <li class="font-bold text-xl h-12">Product</li>
+                    <li class="h-12"><a href="#">Overview</a></li>
+                    <li class="h-12"><a href="#">Pricing</a></li>
+                    <li class="h-12"><a href="#">Roadmap</a></li>
+                </ul>
+                <ul class="w-40">
+                    <li class="font-bold text-xl h-12">Company</li>
+                    <li class="h-12"><a href="#">About</a></li>
+                    <li class="h-12"><a href="#">Contact</a></li>
+                    <li class="h-12"><a href="#">Career</a></li>
+                    <li class="h-12"><a href="#">Reviews</a></li>
+                </ul>
+                <ul class="w-40">
+                    <li class="font-bold text-xl h-12">Legal</li>
+                    <li class="h-12"><a href="#">Terms &amp; Conditions</a></li>
+                    <li class="h-12"><a href="#">Cookie Policy</a></li>
+                    <li class="h-12"><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- section footnote -->
+        <div
+            class="max-w-screen-2xl mx-auto py-6 border-t-2 border-hitaman flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2023 CodePolitan. All rights reserved.</p>
+            <p>Tugas Zoom 6 | Dikerjakan Oleh: Ari Budiman</p>
+        </div>
+
+    </footer>
+
+    <!-- button back to top -->
+    <button type="button" data-aos="zoom-in-up"
+        class="text-white bg-oren font-medium rounded-xl px-4 py-5 text-sm text-center inline-flex items-center hover:text-hitam"
+        id="back-to-top">
+        <i class="fa-solid fa-arrow-up fa-xl"></i>
+    </button>
+
+    <!-- Main modal -->
+    <div id="staticModal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg py-9 px-12 shadow animate__animated animate__slideInUp">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between">
+                    <h3 class="text-2xl font-bold" id="detailJudul">
+                        Static modal
+                    </h3>
+                    <button type="button"
+                        class="bg-transparent hover:bg-oren rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+                        data-modal-hide="staticModal">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="mt-9">
+                    <p class="text-base leading-relaxed" id="detailIsi">
+                        With less than a month to go before the European Union enacts new consumer privacy laws for its
+                        citizens, companies around the world are updating their terms of service agreements to comply.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/3941d04b00.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

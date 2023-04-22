@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+html::-webkit-scrollbar {
+    /* WebKit */
+    width: 0px;
+}
+
+.montagu-slab {
+    font-family: 'Montagu Slab', serif;
+}
+
+.bg-hero {
+    background: url('../img/bg-hero.png') no-repeat bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 90vh;
+}
+
+.posisi-bawah {
+    transform: translateY(5%);
+}
+
+.posisi-bawahan {
+    transform: translateY(20%);
+}
+
+.faqs-list {
+    height: 70vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+.faqs-list::-webkit-scrollbar {
+    /* WebKit */
+    width: 0px;
+}
+
+.underline-oren {
+    position: relative;
+    padding: 0px 5px;
+}
+
+.underline-oren::before {
+    content: "";
+    background: #FFA500;
+    height: .15em;
+    position: absolute;
+    bottom: .20em;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+}
+
+.list-oren {
+    list-style-image: url('../img/list.png');
+}
+
+.width-pricing {
+    width: 520px;
+}
+
+.offer {
+    background: rgba(255, 165, 0, 0.15);
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+}
+
+#fasilitas li span {
+    cursor: pointer;
+}
+
+.elipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
