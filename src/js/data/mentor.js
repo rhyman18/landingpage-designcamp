@@ -1,8 +1,8 @@
-import MentorImg from '../../img/mentor.png';
-import Mentor2Img from '../../img/mentor2.png';
-import Mentor3Img from '../../img/mentor3.png';
-import Mentor4Img from '../../img/mentor4.png';
-import Mentor5Img from '../../img/mentor5.png';
+import MentorImg from '/src/img/mentor.png';
+import Mentor2Img from '/src/img/mentor2.png';
+import Mentor3Img from '/src/img/mentor3.png';
+import Mentor4Img from '/src/img/mentor4.png';
+import Mentor5Img from '/src/img/mentor5.png';
 
 const dataMentor = [
   {

@@ -1,4 +1,4 @@
-import Logo from '../img/logo.png';
+import Logo from '/src/img/logo.png';
 import dataMateri from './data/materi';
 import dataMentor from './data/mentor';
 import {dataJudul, dataBelajarSendiri, dataBelajarBootcamp} from './data/komparasi';
