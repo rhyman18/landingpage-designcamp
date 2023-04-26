@@ -1,6 +1,6 @@
 # Landing Page DesignCamp
 
-Membuat landing page situs Pelatilhan Desain sebagai tugas  ke 6 dari sesi zoom Codepolitan. Berikut framework dan library yang digunakan :
+Membuat landing page situs Pelatilhan Desain sebagai tugas ke 6 dari sesi zoom Codepolitan. Berikut framework dan library yang digunakan :
 
 - `NodeJS` : untuk install framework dan library cli
 - `Webpack` : optimasi performa web. menambahkan: babel, css minification, image minimizer, (purge css dinonaktifkan karena merusak fungsionalitas website)
