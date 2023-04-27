@@ -3,8 +3,8 @@
 Membuat landing page situs Pelatilhan Desain sebagai tugas ke 6 dari sesi zoom Codepolitan. Berikut framework dan library yang digunakan :
 
 - `NodeJS` : untuk install framework dan library cli
-- `Webpack` : optimasi performa web. menambahkan: babel, css minification, image minimizer, (purge css dinonaktifkan karena merusak fungsionalitas website)
-- `Tailwind` : styling web lebih praktis, menambahkan plugin postcss, autoprefixer
+- `Webpack` : optimasi performa web. menambahkan plugin/loader `babel`, `css minification`, `image minimizer`
+- `Tailwind` : styling web lebih praktis, menambahkan plugin `postcss`, `autoprefixer`
 - `Flowbite` : styling components untuk tailwind
 - `Animate.css` : styling animasi efek unik
 - `Aos` : styling animasi saat scrolling
