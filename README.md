@@ -11,7 +11,8 @@ Membuat landing page situs Pelatilhan Desain sebagai tugas ke 6 dari sesi zoom C
 - `CountUp.js` : styling animasi efek angka
 - `Tiny Slider 2` : styling component carousel
 - `Eslint` : membantu clean code javascript
+- `Install SSL` : update ssl certificate sehingga dapat diakses menggunakan https
 
 # Deployment Web
 
-Silahkan kunjungi **[http://designcamp.aribudiman.site](http://designcamp.aribudiman.site)** untuk melihat hasil jadi Website. Sebagai keterangan website di deploy di Amazon Web Services, lebih tepatnya Amazon S3 Bucket. Memngapa demikian? dikarenakan website hanya berisi landing page (statis) dan tidak ada kompleksitas fitur Website.
+Silahkan kunjungi **[http://designcamp.aribudiman.site](http://designcamp.aribudiman.site)** untuk melihat hasil jadi Website. Sebagai keterangan website di deploy di Amazon Web Services, lebih tepatnya Amazon S3 Bucket. Memngapa demikian? dikarenakan website hanya berisi landing page (statis) dan tidak ada kompleksitas fitur Website. (Update) menambahkan AWS CloudFront untuk CDN web kita sehingga web ter cache dan menjadi low latency untuk user.
